@@ -4,8 +4,8 @@ from django.http import JsonResponse
 
 
 def index(request):
-    return HttpResponse("<b><h3>Home page</h3></b>")
+    return render(request,"index.html")
 
 
 def about(request):
-    return HttpResponse("<h3>about us</h3>")
+    return render(request,"about.html")
