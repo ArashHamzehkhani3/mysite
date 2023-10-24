@@ -57,7 +57,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="" title="" /></a>
+				        <a href="index.html"><img src="" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -92,8 +92,7 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content blog-header-content col-lg-12">
 							<h1 class="text-white">
-								Dude You’re Getting
-								a Telescope				
+											
 							</h1>	
 							<p class="text-white">
 								There is a moment in the life of any aspiring astronomer that it is time to buy that first
@@ -186,9 +185,9 @@
 								</div>
 								<div class="col-lg-9 col-md-9 ">
 									<div class="feature-img">
-										<img class="img-fluid" src="{% static 'img/blog/feature-img1.jpg' %}" alt="">
+										<img class="img-fluid" src="{% static 'img/feature-img1.jpg' %}" alt="">
 									</div>
-									<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
+									<a class="posts-title" href="{% url 'blog:single' %}"><h3>Why Linux is better than Windows?</h3></a>
 									<p class="excert">
 										MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
 									</p>
@@ -212,7 +211,7 @@
 								</div>
 								<div class="col-lg-9 col-md-9 ">
 									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/feature-img2.jpg" alt="">
+										<img class="img-fluid" src="{% static 'img/blog/feature-img2.jpg' %}" alt="">
 									</div>
 									<a class="posts-title" href="blog-single.html"><h3>The Basics Of Buying A Telescope</h3></a>
 									<p class="excert">
@@ -238,7 +237,7 @@
 								</div>
 								<div class="col-lg-9 col-md-9">
 									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/feature-img4.jpg" alt="">
+										<img class="img-fluid" src="{% static 'img/feature-img4.jpg' %}" alt="">
 									</div>
 									<a class="posts-title" href="blog-single.html"><h3>The Night Sky</h3></a>
 									<p class="excert">
@@ -264,7 +263,7 @@
 								</div>
 								<div class="col-lg-9 col-md-9">
 									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/feature-img5.jpg" alt="">
+										<img class="img-fluid" src="{% static 'img/feature-img5.jpg' %}" alt="">
 									</div>
 									<a class="posts-title" href="blog-single.html"><h3>Telescopes 101</h3></a>
 									<p class="excert">
