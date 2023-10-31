@@ -15,6 +15,7 @@ class Post(models.Model):
     publised_date=models.DateTimeField(null=True)
     created_date=models.DateTimeField(auto_now_add=True)
     updated_time=models.DateTimeField(auto_now_add=True)
+    
 
 
     def __str__(self):
