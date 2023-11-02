@@ -7,7 +7,9 @@ from blog.models import Post
 
 
 def blog_view(request):
-    return render(request,'blog/blog-home.html')
+    Posts=Post.objects.all()
+    context= {'posts': Posts }
+    return render(request,'blog/blog-home.html',context)
 
 
 def blog_single(request):
