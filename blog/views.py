@@ -13,7 +13,8 @@ def blog_view(request):
 
 
 def blog_single(request,pid):
-    post=get_object_or_404(Post,pk=pid)
+    Posts=Post.objects.filter(status=1)
+    post=get_object_or_404(Posts,pk=pid,status=1)
     context={'post':post}
     return render(request,'blog/blog-single.html',context)
 
