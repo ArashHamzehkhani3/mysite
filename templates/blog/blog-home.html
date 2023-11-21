@@ -172,10 +172,12 @@
 							<div class="single-post row">
 								<div class="col-lg-3  col-md-3 meta-details">
 									<ul class="tags">
-										<li><a href="#">OpenSource</a></li>
-										<li><a href="#">Technology,</a></li>
-										<li><a href="#">Politics,</a></li>
-										<li><a href="#">Lifestyle</a></li>
+										{% for cat in post.category.all  %}
+										<a><li>{{cat.name}}</li></a>
+										{% endfor %}
+										
+									
+										
 									</ul>
 									<div class="user-details row">
 										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
@@ -299,7 +301,7 @@
 		                        </ul>
 		                    </nav>
 						</div>
-						{}
+						
 						<div class="col-lg-4 sidebar-widgets">
 							<div class="widget-wrap">
 								<div class="single-sidebar-widget search-widget">

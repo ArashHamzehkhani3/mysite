@@ -1,6 +1,15 @@
 from django.db import models
-from django.contrib.auth.models import User
 # Create your models here.
+
+
+
+class Category(models.Model):
+        name=models.CharField(max_length=255)
+
+        def __str__(self):
+            return self.name
+    
+
 
 
 class Post(models.Model):
@@ -8,7 +17,7 @@ class Post(models.Model):
     title=models.CharField(max_length=300)
     content=models.TextField()
     #tag
-    #category
+    category=models.ManyToManyField(Category)
     counted_view=models.IntegerField(default=0)
     status=models.BooleanField(default=False)
     publised_date=models.DateTimeField(null=True)
@@ -24,4 +33,5 @@ class Post(models.Model):
         return self.title
     
 
+    
 
